@@ -203,6 +203,56 @@ The output will be placed in the `dist/` directory, ready to be hosted on any we
 
 ---
 
+## 🚀 How to Deploy on Vercel
+
+The project includes a ready-to-use [`vercel.json`](file:///d:/Projects/BIT/vercel.json) configuration for instant deployment with automated SPA client-side routing.
+
+### Method 1: Deploy with GitHub & Vercel Dashboard (Recommended)
+
+1. **Create a GitHub Repository**:
+   - Go to [GitHub](https://github.com/new) and create a new repository (e.g., `bit-mechanical-department`).
+2. **Push your code to GitHub**:
+   In your VS Code terminal (`d:\Projects\BIT`):
+   ```bash
+   git branch -M main
+   git remote add origin https://github.com/YOUR_USERNAME/bit-mechanical-department.git
+   git push -u origin main
+   ```
+3. **Deploy on Vercel**:
+   - Go to [vercel.com](https://vercel.com/) and sign in with GitHub.
+   - Click **"Add New..."** > **"Project"**.
+   - Select your `bit-mechanical-department` repository from the list and click **"Import"**.
+   - Vercel automatically detects **Vite**:
+     - **Framework Preset:** Vite
+     - **Build Command:** `npm run build`
+     - **Output Directory:** `dist`
+   - Click **"Deploy"**.
+   - In less than 60 seconds, your site is live with a secure HTTPS URL (e.g., `https://bit-mechanical.vercel.app`)!
+
+---
+
+### Method 2: Deploy Directly via Terminal (Vercel CLI)
+
+If you have or want to use the Vercel CLI directly from VS Code:
+
+1. In the terminal:
+   ```bash
+   npx vercel
+   ```
+2. Follow the quick interactive prompts:
+   - *Set up and deploy?* **Y**
+   - *Which scope?* (Select your Vercel account)
+   - *Link to existing project?* **N**
+   - *What's your project's name?* **bit-mechanical-engineering**
+   - *In which directory is your code located?* **./**
+   - *Want to modify settings?* **N**
+3. For immediate production deployment:
+   ```bash
+   npx vercel --prod
+   ```
+
+---
+
 ## 📝 How to Update Department Data & Images
 
 All content is cleanly separated from UI components inside `src/data/`:
