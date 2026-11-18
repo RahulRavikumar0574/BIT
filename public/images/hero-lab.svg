@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07182C" />
+      <stop offset="50%" stop-color="#0B2545" />
+      <stop offset="100%" stop-color="#133E6E" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D97706" />
+      <stop offset="100%" stop-color="#F59E0B" />
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#0284C7" stop-opacity="0.0" />
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  {/* Background */}
+  <rect width="800" height="600" fill="url(#bgGrad)" />
+  <rect width="800" height="600" fill="url(#grid)" />
+
+  {/* Ambient Tech Glows */}
+  <circle cx="650" cy="180" r="160" fill="#0284C7" opacity="0.15" filter="blur(40px)" />
+  <circle cx="200" cy="400" r="140" fill="#D97706" opacity="0.15" filter="blur(40px)" />
+
+  {/* Modern Clean CNC Machine Enclosure */}
+  <g transform="translate(180, 110)">
+    {/* Machine Cabinet Outer Frame */}
+    <rect x="0" y="0" width="440" height="340" rx="16" fill="#0F172A" stroke="#334155" stroke-width="4" />
+    
+    {/* Upper Tech Header Bar */}
+    <rect x="0" y="0" width="440" height="50" rx="16" fill="#1E293B" />
+    <rect x="0" y="42" width="440" height="8" fill="#D97706" />
+    <circle cx="30" cy="25" r="7" fill="#10B981" />
+    <circle cx="52" cy="25" r="7" fill="#F59E0B" />
+    <circle cx="74" cy="25" r="7" fill="#EF4444" />
+    <text x="415" y="30" fill="#94A3B8" font-size="12" font-weight="bold" font-family="'Plus Jakarta Sans', sans-serif" text-anchor="end">BIT SATHY • 4-AXIS VMC CNC</text>
+
+    {/* Front Safety Viewing Window */}
+    <rect x="30" y="65" width="280" height="235" rx="8" fill="#020617" stroke="#475569" stroke-width="2" />
+    <rect x="30" y="65" width="280" height="235" fill="url(#glowGrad)" />
+
+    {/* CNC Machine Tool Bed */}
+    <rect x="55" y="240" width="230" height="40" fill="#1E293B" stroke="#64748B" stroke-width="2" />
+    {/* T-Slots */}
+    <line x1="75" y1="250" x2="265" y2="250" stroke="#0F172A" stroke-width="3" />
+    <line x1="75" y1="265" x2="265" y2="265" stroke="#0F172A" stroke-width="3" />
+
+    {/* Machined Metal Component on Bed */}
+    <rect x="135" y="210" width="70" height="30" rx="3" fill="#E2E8F0" stroke="#94A3B8" stroke-width="2" />
+    <circle cx="170" cy="225" r="7" fill="#64748B" />
+
+    {/* Vertical Spindle & Cutting Head */}
+    <rect x="155" y="65" width="30" height="95" fill="#334155" />
+    <rect x="150" y="150" width="40" height="25" fill="#64748B" />
+    {/* Tool Holder and End Mill */}
+    <polygon points="160,175 180,175 174,195 166,195" fill="#CBD5E1" />
+    <rect x="168" y="195" width="4" height="15" fill="#F59E0B" />
+    {/* Laser Alignment Guide */}
+    <line x1="170" y1="200" x2="170" y2="210" stroke="#EF4444" stroke-width="2" stroke-dasharray="3 2" />
+
+    {/* Operator Control Panel Console (Right Side) */}
+    <rect x="330" y="65" width="85" height="235" rx="6" fill="#1E293B" stroke="#475569" stroke-width="1.5" />
+    {/* Digital Display Screen */}
+    <rect x="340" y="80" width="65" height="55" rx="4" fill="#020617" stroke="#38BDF8" stroke-width="1" />
+    <path d="M 345 105 L 360 95 L 375 110 L 390 90 L 400 100" fill="none" stroke="#38BDF8" stroke-width="1.5" />
+    <text x="345" y="128" fill="#10B981" font-size="8" font-family="monospace">RUN: OPTIMAL</text>
+    {/* Control Buttons */}
+    <circle cx="355" cy="160" r="8" fill="#10B981" />
+    <circle cx="380" cy="160" r="8" fill="#EF4444" />
+    <circle cx="355" cy="185" r="7" fill="#64748B" />
+    <circle cx="380" cy="185" r="7" fill="#64748B" />
+    {/* Jog Dial */}
+    <circle cx="372" cy="235" r="18" fill="#0F172A" stroke="#94A3B8" stroke-width="2" />
+    <circle cx="372" cy="235" r="6" fill="#D97706" />
+  </g>
+
+  {/* Precision CAD Holographic Geometry Overlay */}
+  <g transform="translate(60, 240)">
+    {/* Isometric Gear Representation */}
+    <circle cx="70" cy="70" r="50" stroke="#38BDF8" stroke-width="2" stroke-dasharray="6 3" fill="none" opacity="0.6" />
+    <circle cx="70" cy="70" r="28" stroke="#F59E0B" stroke-width="2" fill="none" opacity="0.7" />
+    <line x1="70" y1="10" x2="70" y2="130" stroke="#38BDF8" stroke-width="1" stroke-dasharray="4 4" opacity="0.4" />
+    <line x1="10" y1="70" x2="130" y2="70" stroke="#38BDF8" stroke-width="1" stroke-dasharray="4 4" opacity="0.4" />
+    <text x="70" y="145" fill="#38BDF8" font-size="10" font-family="'Plus Jakarta Sans', sans-serif" text-anchor="middle" font-weight="bold">GENERATIVE CAD MAPPING</text>
+  </g>
+
+  {/* Bottom Info Ribbon */}
+  <rect x="0" y="530" width="800" height="70" fill="#030D1A" />
+  <line x1="0" y1="530" x2="800" y2="530" stroke="#D97706" stroke-width="2" />
+  <text x="40" y="565" fill="#FFFFFF" font-size="14" font-weight="bold" font-family="'Plus Jakarta Sans', sans-serif">Department of Mechanical Engineering • Special Laboratories Showcase</text>
+  <text x="40" y="583" fill="#94A3B8" font-size="11" font-family="'Plus Jakarta Sans', sans-serif">Bannari Amman Institute of Technology, Sathyamangalam • Industry 4.0 Learning</text>
+</svg>
